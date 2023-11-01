@@ -1,0 +1,1033 @@
+<?php
+// Schema Action
+$schemaAction = array(
+	'AchieveAction', 
+	'AssessAction',
+	'ConsumeAction', 
+	'ControlAction',
+	'CreateAction',
+	'FindAction',
+	'InteractAction',  
+	'MoveAction',
+	'OrganizeAction',  
+	'PlayAction',
+	'SearchAction',
+	'SeekToAction',
+	'SolveMathAction',
+	'TradeAction',
+	'TransferAction',  
+	'UpdateAction'
+);
+// Schema BioChemEntity
+$schemaBioChemEntity = array(
+	'ChemicalSubstance',
+	'Gene',
+	'MolecularEntity',
+	'Protein'
+);
+// Schema CreativeWork
+$schemaCreativeWork = array(
+	'AmpStory',
+	'ArchiveComponent',
+	'Article'=>array(
+		'AdvertiserContentArticle',
+		'NewsArticle'=>array(
+			'AnalysisNewsArticle',
+			'AskPublicNewsArticle',
+			'BackgroundNewsArticle',
+			'OpinionNewsArticle',
+			'ReportageNewsArticle',
+			'ReviewNewsArticle'
+		),
+		'Report',
+		'SatiricalArticle',
+		'ScholarlyArticle'=>array(
+			'MedicalScholarlyArticle'
+		),
+		'SocialMediaPosting'=>array(
+			'BlogPosting'=>array(
+				'LiveBlogPosting'
+			),
+			'DiscussionForumPosting'
+		),
+		'TechArticle'=>array(
+			'APIReference'
+		)
+	),
+	'Atlas',
+	'Blog',
+	'Book'=>array(
+		'Audiobook'
+	),
+	'Chapter',	
+	'Claim',
+	'Clip'=>array(
+		'MovieClip',
+		'RadioClip',
+		'TVClip',
+		'VideoGameClip'
+	),
+	'Code',
+	'Collection'=>array(
+		'ProductCollection'
+	),  
+	'ComicStory'=>array(
+		'ComicCoverArt'
+	),
+	'Comment'=>array(
+		'Answer',
+		'CorrectionComment',
+		'Question'
+	),
+	'Conversation',
+	'Course',
+	'CreativeWorkSeason'=>array(
+		'PodcastSeason',
+		'RadioSeason',
+		'TVSeason'
+	),  
+	'CreativeWorkSeries'=>array(
+		'BookSeries',
+		'MovieSeries',
+		'Periodical'=>array(
+			'ComicSeries',
+			'Newspaper'
+		),
+		'PodcastSeries',
+		'RadioSeries',
+		'TVSeries',
+		'VideoGameSeries'
+	),
+	'DataCatalog',
+	'Dataset'=>array(
+		'DataFeed'=>array(
+			'CompleteDataFeed'
+		)
+	),
+	'DefinedTermSet'=>array(
+		'CategoryCodeSet'
+	),  
+	'Diet',
+	'DigitalDocument'=>array(
+		'NoteDigitalDocument',
+		'PresentationDigitalDocument',
+		'SpreadsheetDigitalDocument',
+		'TextDigitalDocument'
+	),  
+	'Drawing',
+	'EducationalOccupationalCredential',
+	'Episode'=>array(
+		'PodcastEpisod',
+		'RadioEpisode',
+		'TVEpisode'
+	),
+	'ExercisePlan',
+	'Game'=>array(
+		'VideoGame'
+	),
+	'Guide',
+	'HowTo'=>array(
+		'Recipe'
+	),
+	'HowToDirection',
+	'HowToSection',
+	'HowToStep',
+	'HowToTip',
+	'HyperToc',
+	'HyperTocEntry',
+	'LearningResource'=>array(
+		'Course',
+		'Quiz'
+	),
+	'Legislation'=>array(
+		' LegislationObject'
+	),
+	'Manuscript',
+	'Map',
+	'MathSolver',
+	'MediaObject'=>array(
+		'3DModel',
+		'AudioObject'=>array(
+			'AudioObjectSnapshot',
+			'Audiobook'
+		),
+		'DataDownload',
+		'ImageObject'=>array(
+			'Barcode',
+ 			'ImageObjectSnapshot'
+		),
+		'LegislationObject',
+		'MusicVideoObject',
+		'VideoObject'=>array(
+			'VideoObjectSnapshot'
+		)
+	), 
+	'MediaReviewItem',
+	'Menu',
+	'MenuSection',
+	'Message'=>array(
+		'EmailMessage'
+	),
+	'Movie',
+	'MusicComposition',
+	'MusicPlaylist',
+	'MusicRecording',
+	'Painting',
+	'Photograph',
+	'Play',
+	'Poster',
+	'PublicationIssue'=>array(
+		'ComicIssue'
+	),  
+	'PublicationVolume',
+	'Quotation',
+	'Review'=>array(
+		'ClaimReview',
+		'CriticReview'=>array(
+			'ReviewNewsArticle'
+		),
+		'EmployerReview',
+		'MediaReview',
+		'Recommendation',
+		'UserReview'
+	),
+	'Sculpture',
+	'Season',
+	'SheetMusic',
+	'ShortStory',
+	'SoftwareApplication'=>array(
+		'MobileApplication',
+		'VideoGame',
+		'WebApplication'
+	),  
+	'SoftwareSourceCode',
+	'SpecialAnnouncement',
+	'Statement',
+	'TVSeason',
+	'TVSeries',
+	'Thesis',
+	'VisualArtwork'=>array(
+		'CoverArt'=>array(
+			'ComicCoverArt'
+		)
+	),  
+	'WebContent'=>array(
+		'HealthTopicContent'	
+	),
+	'WebPage'=>array(
+		'AboutPage',
+		'CheckoutPage',
+		'CollectionPage'=>array(
+			'MediaGallery'=>array(
+				'ImageGallery',
+				'VideoGallery'
+			)
+		),
+		'ContactPage',
+		'FAQPage',
+		'ItemPage',
+		'MedicalWebPage',
+		'ProfilePage',
+		'QAPage',
+		'RealEstateListing',
+		'SearchResultsPage'
+	),
+	'WebPageElement'=>array(
+		'SiteNavigationElement',
+		'Table',
+		'WPAdBlock',
+		'WPFooter',
+		'WPHeader',
+		'WPSideBar'
+	),  
+	'WebSite'
+);
+// Schema Event
+$schemaEvent = array(
+	'BusinessEvent',
+	'ChildrensEvent',
+	'ComedyEvent',
+	'CourseInstance',
+	'DanceEvent',
+	'DeliveryEvent',
+	'EducationEvent',
+	'EventSeries',
+	'ExhibitionEvent',
+	'Festival',
+	'FoodEvent',
+	'Hackathon',
+	'LiteraryEvent',
+	'MusicEvent',
+	'PublicationEvent'=>array(
+		'BroadcastEvent',
+		'OnDemandEvent'
+	),  
+	'SaleEvent',
+	'ScreeningEvent',
+	'SocialEvent',
+	'SportsEvent',
+	'TheaterEvent',
+	'UserInteraction'=>array(
+		'UserBlocks',
+		'UserCheckins',
+		'UserComments',
+		'UserDownloads',
+		'UserLikes',
+		'UserPageVisits',
+		'UserPlays',
+		'UserPlusOnes',
+		'UserTweets'
+	),  
+	'VisualArtsEvent'
+);
+// Schema Event
+$schemaEvent = array(
+	'ActionAccessSpecification',
+	'AlignmentObject',
+	'Audience'=>array(
+		'BusinessAudience',
+		'EducationalAudience',
+		'MedicalAudience'=>array(
+			'Patient'
+		),
+		'PeopleAudience'=>array(
+			'MedicalAudience',
+			'ParentAudience'
+		),
+		'Researcher'
+	),
+	'BedDetails',
+	'Brand',
+	'BroadcastChannel'=>array(
+		'RadioChannel'=>array(
+			'AMRadioChannel',
+			'FMRadioChannel'
+		),
+		'TelevisionChannel'
+	),
+	'BroadcastFrequencySpecification',
+	'Class',
+	'ComputerLanguage',
+	'DataFeedItem',
+	'DefinedTerm'=>array(
+		'CategoryCode'=>array(
+			'MedicalCode'
+		)
+	),
+	'Demand',
+	'DigitalDocumentPermission',
+	'EducationalOccupationalProgram'=>array(
+		'WorkBasedProgram'
+	),
+	'EnergyConsumptionDetails',
+	'EntryPoint',
+	'Enumeration'=>array(
+		'BoardingPolicyType',
+		'BookFormatType',
+		'BusinessEntityType',
+		'BusinessFunction',
+		'CarUsageType',
+		'ContactPointOption',
+		'DayOfWeek',
+		'DeliveryMethod',
+		'DigitalDocumentPermissionType',
+		'EnergyEfficiencyEnumeration',
+		'EventAttendanceModeEnumeration',
+		'GamePlayMode',
+		'GenderType',
+		'GovernmentBenefitsType',
+		'HealthAspectEnumeration',
+		'ItemAvailability',
+		'ItemListOrderType',
+		'LegalValueLevel',
+		'MapCategoryType',
+		'MeasurementTypeEnumeration',
+		'MediaManipulationRatingEnumeration',
+		'MedicalEnumeration',
+		'MerchantReturnEnumeration',
+		'MusicAlbumProductionType',
+		'MusicAlbumReleaseType',
+		'MusicReleaseFormatType',
+		'NonprofitType',
+		'OfferItemCondition',
+		'PaymentMethod',
+		'PhysicalActivityCategory',
+		'PriceComponentTypeEnumeration',
+		'PriceTypeEnumeration',
+		'QualitativeValue',
+		'RefundTypeEnumeration',
+		'RestrictedDiet',
+		'ReturnFeesEnumeration',
+		'ReturnLabelSourceEnumeration',
+		'ReturnMethodEnumeration',
+		'RsvpResponseType',
+		'SizeGroupEnumeration',
+		'SizeSystemEnumeration',
+		'Specialty',
+		'StatusEnumeration',
+		'WarrantyScope'
+	),
+	'FloorPlan',
+	'GameServer',
+	'GeospatialGeometry',
+	'Grant'=>array(
+		'MonetaryGrant'
+	),
+	'HealthInsurancePlan',
+	'HealthPlanCostSharingSpecification',
+	'HealthPlanFormulary',
+	'HealthPlanNetwork',
+	'Invoice',
+	'ItemList'=>array(
+		'BreadcrumbList',
+		'HowToSection',
+		'HowToStep',
+		'OfferCatalog'
+	),
+	'JobPosting',
+	'Language',
+	'ListItem'=>array(
+		'HowToDirection',
+		'HowToItem'=>array(
+			'HowToSupply',
+			'HowToTool'
+		),
+		'HowToSection',
+		'HowToStep',
+		'HowToTip'
+	),
+	'MediaSubscription',
+	'MenuItem',
+	'MerchantReturnPolicy',
+	'MerchantReturnPolicySeasonalOverride',
+	'Observation',
+	'Occupation',
+	'OccupationalExperienceRequirements',
+	'Offer'=>array(
+		'AggregateOffer',
+		'OfferForLease',
+		'OfferForPurchase'
+	),
+	'Order',
+	'OrderItem',
+	'ParcelDelivery',
+	'Permit'=>array(
+		'GovernmentPermit'
+	),
+	'ProgramMembership',
+	'Property',
+	'PropertyValueSpecification',
+	'Quantity'=>array(
+		'Distance',
+		'Duration',
+		'Energy',
+		'Mass'
+	),
+	'Rating'=>array(
+		'AggregateRating'=>array(
+			'EmployerAggregateRating'
+		),
+		'EndorsementRating'
+	),
+	'Reservation'=>array(
+		'BoatReservation',
+		'BusReservation',
+		'EventReservation',
+		'FlightReservation',
+		'FoodEstablishmentReservation',
+		'LodgingReservation',
+		'RentalCarReservation',
+		'ReservationPackage',
+		'TaxiReservation',
+		'TrainReservation'
+	),
+	'Role'=>array(
+		'LinkRole',
+		'OrganizationRole'=>array(
+			'EmployeeRole'
+		),
+		'PerformanceRole'
+	),
+	'Schedule',
+	'Seat',
+	'Series'=>array(
+		'CreativeWorkSeries',
+		'EventSeries'
+	),
+	'Service'=>array(
+		'BroadcastService'=>array(
+			'RadioBroadcastService'
+		),
+		'CableOrSatelliteService',
+		'FinancialProduct'=>array(
+			'BankAccount'=>array(
+				'DepositAccount'
+			),
+			'CurrencyConversionService',
+			'InvestmentOrDeposit'=>array(
+				'BrokerageAccount',
+				'DepositAccount',
+				'InvestmentFund'
+			),
+			'LoanOrCredit'=>array(
+				'CreditCard',
+				'MortgageLoan'
+			),
+			'PaymentCard',
+			'PaymentService'
+		),
+		'FoodService',
+		'GovernmentService',
+		'Taxi',
+		'TaxiService',
+		'WebAPI'
+	),
+	'ServiceChannel',
+	'SpeakableSpecification',
+	'StatisticalPopulation',
+	'StructuredValue'=>array(
+		'CDCPMDRecord',
+		'ContactPoint'=>array(
+			'PostalAddress'
+		),
+		'DatedMoneySpecification',
+		'DefinedRegion',
+		'DeliveryTimeSettings',
+		'EngineSpecification',
+		'ExchangeRateSpecification',
+		'GeoCoordinates',
+		'GeoShape'=>array(
+			'GeoCircle'
+		),
+		'InteractionCounter',
+		'MonetaryAmount',
+		'NutritionInformation',
+		'OfferShippingDetails',
+		'OpeningHoursSpecification',
+		'OwnershipInfo',
+		'PostalCodeRangeSpecification',
+		'PriceSpecification'=>array(
+			'CompoundPriceSpecification',
+			'DeliveryChargeSpecification',
+			'PaymentChargeSpecification',
+			'UnitPriceSpecification'
+		),
+		'PropertyValue'=>array(
+			'LocationFeatureSpecification'
+		),
+		'QuantitativeValue',
+		'QuantitativeValueDistribution'=>array(
+			' MonetaryAmountDistribution'
+		),
+		'RepaymentSpecification',
+		'ShippingDeliveryTime',
+		'ShippingRateSettings',
+		'TypeAndQuantityNode',
+		'WarrantyPromise'
+	),
+	'Ticket',
+	'Trip'=>array(
+		'BoatTrip',
+		'BusTrip',
+		'Flight',
+		'TouristTrip',
+		'TrainTrip'
+	),
+	'VirtualLocation'
+);
+// Schema MedicalEntity
+$schemaMedicalEntity = array(
+	'AnatomicalStructure'=>array(
+		'Bone',
+		'BrainStructure',
+		'Joint',
+		'Ligament',
+		'Muscle',
+		'Nerve',
+		'Vessel'=>array(
+			'Artery',
+			'LymphaticVessel',
+			'Vein'
+		)
+	),
+	'AnatomicalSystem',
+ 	'DrugClass',
+ 	'DrugCost',
+ 	'LifestyleModification'=>array(
+		'Diet',
+		'PhysicalActivity'=>array(
+			'Exercise Plan'
+		)
+	),  
+ 	'MedicalCause',
+ 	'MedicalCondition'=>array(
+		'InfectiousDisease',
+		'MedicalSignOrSymptom'=>array(
+			'MedicalSign'=>array(  
+				'VitalSign'
+			),
+			'MedicalSymptom'
+		)
+	),  
+ 	'MedicalContraindication',
+ 	'MedicalDevice',
+ 	'MedicalGuideline'=>array(
+		'MedicalGuidelineContraindication',
+ 		'MedicalGuidelineRecommendation'
+	),  
+ 	'MedicalIndication'=>array(
+		'ApprovedIndication',
+		'PreventionIndication',
+		'TreatmentIndication'
+	),  
+ 	'MedicalIntangible'=>array(
+		'DDxElement',
+		'DoseSchedule'=>array(
+			'MaximumDoseSchedule',
+ 			'RecommendedDoseSchedule',
+ 			'ReportedDoseSchedule'
+		),  
+ 		'DrugLegalStatus',
+ 		'DrugStrength',
+ 		'MedicalCode',
+ 		'MedicalConditionStage'
+	), 
+ 	'MedicalProcedure'=>array(
+		'DiagnosticProcedure',
+ 		'PalliativeProcedure',
+ 		'PhysicalExam',
+		'SurgicalProcedure',
+ 		'TherapeuticProcedure'=>array(
+			'MedicalTherapy'=>array(
+				'OccupationalTherapy',
+				'PalliativeProcedure',
+				'PhysicalTherapy',
+				'RadiationTherapy',
+				'RespiratoryTherapy'
+			),
+			'PsychologicalTreatment'
+		)
+	),  
+ 	'MedicalRiskEstimator'=>array(
+		'MedicalRiskCalculator',
+ 		'MedicalRiskScore'
+	),  
+ 	'MedicalRiskFactor',
+ 	'MedicalStudy'=>array(
+		'MedicalObservationalStudy',
+ 		'MedicalTrial'
+	), 
+ 	'MedicalTest'=>array(
+		'BloodTest',
+ 		'ImagingTest',
+ 		'MedicalTestPanel',
+ 		'PathologyTest'
+	),  
+ 	'Substance'=>array(
+		'DietarySupplement',
+ 		'Drug'
+	), 
+ 	'SuperficialAnatomy'
+);
+// Schema Organization Types
+$schemaOrgs = array(
+	'Airline',
+	'Consortium',
+	'Corporation',
+	'EducationalOrganization'=>array(
+		'CollegeOrUniversity',
+		'ElementarySchool',
+		'HighSchool',
+		'MiddleSchool',
+		'Preschool',
+		'School'
+	),
+	'FundingScheme',
+	'GovernmentOrganization',
+	'LibrarySystem',
+	'LocalBusiness'=>array(
+		'AnimalShelter',
+		'ArchiveOrganization',
+		'AutomotiveBusiness'=>array(
+			'AutoBodyShop',
+			'AutoDealer',
+			'AutoPartsStore',
+			'AutoRental',
+			'AutoRepair',
+			'AutoWash',
+			'GasStation',
+			'MotorcycleDealer',
+			'MotorcycleRepair'
+		),
+		'ChildCare',
+		'Dentist',
+		'DryCleaningOrLaundry',
+		'EmergencyService'=>array(
+			'FireStation',
+			'Hospital',
+			'PoliceStation'
+		),
+		'EmploymentAgency',
+		'EntertainmentBusiness'=>array(
+			'AdultEntertainment',
+			'AmusementPark',
+			'ArtGallery',
+			'Casino',
+			'ComedyClub',
+			'MovieTheater',
+			'NightClub'
+		),
+		'FinancialService'=>array(
+			'AccountingService',
+			'AutomatedTeller',
+			'BankOrCreditUnion',
+			'InsuranceAgency'
+		),
+		'FoodEstablishment'=>array(
+			'Bakery',
+			'BarOrPub',
+			'Brewery',
+			'CafeOrCoffeeShop',
+			'Distillery',
+			'FastFoodRestaurant',
+			'IceCreamShop',
+			'Restaurant',
+			'Winery'
+		),
+		'GovernmentOffice'=>array(
+			'PostOffice'
+		),
+		'HealthAndBeautyBusiness'=>array(
+			'BeautySalon',
+			'DaySpa',
+			'HairSalon',
+			'HealthClub',
+			'NailSalon',
+			'TattooParlor'
+		),
+		'HomeAndConstructionBusiness'=>array(
+			'Electrician',
+			'GeneralContractor',
+			'HVACBusiness',
+			'HousePainter',
+			'Locksmith',
+			'MovingCompany',
+			'Plumber',
+			'RoofingContractor'
+		),
+		'InternetCafe',
+		'LegalService'=>array(
+			'Attorney',
+			'Notary'
+		),
+		'Library',
+		'LodgingBusiness'=>array(
+			'BedAndBreakfast',
+			'Campground',
+			'Hostel',
+			'Hotel',
+			'Motel',
+			'Resort'=>array(
+				'SkiResort'
+			)
+		),
+		'MedicalBusiness'=>array(
+			' :: CommunityHealth',
+			'Dentist',
+			' :: Dermatology',
+			' :: DietNutrition',
+			' :: Emergency',
+			' :: Geriatric',
+			' :: Gynecologic',
+			'MedicalClinic'=>array(
+				'CovidTestingFacility'
+			),
+			' :: Midwifery',
+			' :: Nursing',
+			' :: Obstetric',
+			' :: Oncologic',
+			'Optician',
+			' :: Optometric',
+			' :: Otolaryngologic',
+			' :: Pediatric',
+			'Pharmacy',
+			'Physician',
+			' :: Physiotherapy',
+			' :: PlasticSurgery'
+		),
+		'ProfessionalService',
+		'RadioStation',
+		'RealEstateAgent',
+		'RecyclingCenter',
+		'SelfStorage',
+		'ShoppingCenter',
+		'SportsActivityLocation'=>array(
+			'BowlingAlley',
+			'ExerciseGym',
+			'GolfCourse',
+			'HealthClub',
+			'PublicSwimmingPool',
+			'SkiResort',
+			'SportsClub',
+			'StadiumOrArena',
+			'TennisComplex'
+		),
+		'Store'=>array(
+			'AutoPartsStore',
+			'BikeStore',
+			'BookStore',
+			'ClothingStore',
+			'ComputerStore',
+			'ConvenienceStore',
+			'DepartmentStore',
+			'ElectronicsStore',
+			'Florist',
+			'FurnitureStore',
+			'GardenStore',
+			'GroceryStore',
+			'HardwareStore',
+			'HobbyShop',
+			'HomeGoodsStore',
+			'JewelryStore',
+			'LiquorStore',
+			'MensClothingStore',
+			'MobilePhoneStore',
+			'MovieRentalStore',
+			'MusicStore',
+			'OfficeEquipmentStore',
+			'OutletStore',
+			'PawnShop',
+			'PetStore',
+			'ShoeStore',
+			'SportingGoodsStore',
+			'TireShop',
+			'ToyStore',
+			'WholesaleStore'
+		),
+		'TelevisionStation',
+		'TouristInformationCenter',
+		'TravelAgency'
+	),
+	'MedicalOrganization'=>array(
+		'Dentist',
+		'DiagnosticLab',
+		'Hospital',
+		'MedicalClinic',
+		'Pharmacy',
+		'Physician',
+		'VeterinaryCare'
+	),
+	'NGO',
+	'NewsMediaOrganization',
+	'PerformingGroup'=>array(
+		'DanceGroup',
+ 		'MusicGroup',
+ 		'TheaterGroup'
+	),
+	'Project'=>array(
+		'FundingAgency',
+ 		'ResearchProject'
+	),
+	'ResearchOrganization',
+	'SportsOrganization'=>array(
+		'SportsTeam'
+	),
+	'WorkersUnion'
+);
+// Schema Person
+$schemaPerson = array(
+	'Patient'
+);
+// Schema Place
+$schemaPlace = array(
+	'Accommodation'=>array(
+		'Apartment',
+		'CampingPitch',
+		'House'=>array(
+			'SingleFamilyResidence'
+		),
+		'Room'=>array(
+			'HotelRoom',
+			'MeetingRoom'
+		),
+		'Suite'
+	),  
+	'AdministrativeArea'=>array(
+		'City',
+		'Country',
+		'SchoolDistrict',
+		'State'
+	),  
+	'CivicStructure'=>array(
+		'Airport',
+		'Aquarium',
+		'Beach',
+		'BoatTerminal',
+		'Bridge',
+		'BusStation',
+		'BusStop',
+		'Campground',
+		'Cemetery',
+		'Crematorium',
+		'EducationalOrganization',
+		'EventVenue',
+		'FireStation',
+		'GovernmentBuilding'=>array(
+			'CityHall',
+			'Courthouse',
+			'DefenceEstablishment',
+			'Embassy',
+			'LegislativeBuilding'
+		),
+		'Hospital',
+		'MovieTheater',
+		'Museum',
+		'MusicVenue',
+		'Park',
+		'ParkingFacility',
+		'PerformingArtsTheater',
+		'PlaceOfWorship'=>array(
+			'BuddhistTemple',
+			'Church',
+			'HinduTemple',
+			'Mosque',
+			'Synagogue'
+		),
+		'Playground',
+		'PoliceStation',
+		'PublicToilet',
+		'RVPark',
+		'StadiumOrArena',
+		'SubwayStation',
+		'TaxiStand',
+		'TrainStation',
+		'Zoo'
+	),
+	'Landform'=>array(
+		'BodyOfWater'=>array(
+			'Canal',
+			'LakeBodyOfWater',
+			'OceanBodyOfWater',
+			'Pond',
+			'Reservoir',
+			'RiverBodyOfWater',
+			'SeaBodyOfWater',
+			'Waterfall'
+		),
+		'Continent',
+		'Mountain',
+		'Volcano'
+	),
+	'LandmarksOrHistoricalBuildings',
+	'LocalBusiness',
+	'Residence'=>array(
+		'ApartmentComplex',
+		'GatedResidenceCommunity'
+	),
+	'TouristAttraction',
+	'TouristDestination'
+);
+// Schema Product
+$schemaProduct = array(
+	'IndividualProduct',
+	'ProductCollection',
+	'ProductGroup',
+	'ProductModel',
+	'SomeProducts',
+	'Vehicle'=>array(
+		'BusOrCoach',
+		'Car',
+		'Motorcycle',
+		'MotorizedBicycle',
+		'Taxon'
+	)
+);
+// Schema Things
+$schemaThings = array(
+	'Action'=>$schemaAction,
+	'BioChemEntity'=>$schemaBioChemEntity,
+	'CreativeWork'=>$schemaCreativeWork,
+	'Event'=>$schemaEvent,
+	'Intangible'=>$schemaEvent,
+	'MedicalEntity'=>$schemaMedicalEntity,
+	'Organization'=>$schemaOrgs,
+	'Person'=>$schemaPerson,
+	'Place'=>$schemaPlace,
+	'Product'=>$schemaProduct,
+	'Taxon'
+);
+if (!function_exists('getSchemaTypes')) {
+	function getSchemaTypes($schemaThings, $inc = array()) {
+		$output = array(); 
+		$includeTypes = ((!empty($inc)) ? $inc : array_keys($schemaThings));
+				
+		foreach ($schemaThings as $thing => $value) {
+			if (in_array($thing,$includeTypes)) {	
+				if (!empty($thing)) {
+					$output[$thing] = $thing;
+					if (isset($value)) {
+						foreach ($value as $key => $val) {
+							if (!is_numeric($key)) {
+								$output[$key] = '- '. $key;
+								if (isset($val)) {
+									if (is_array($val)) {
+										foreach ($val as $k => $v) {
+											if (!is_numeric($k)) {
+												$output[$k] = '-- '. $k;	
+												if (isset($v)) {
+													if (is_array($v)) {
+														foreach ($v as $k2 => $v2) {
+															if (!is_numeric($k2)) {
+																$output[$k2] = '--- '. $k2;	
+																if (isset($v2)) {
+																	if (is_array($v2)) {
+																		foreach ($v2 as $k3 => $v3) {
+																			if (!is_numeric($k3)) {
+																				$output[$k3] = '---- '. $k3;
+																				if (isset($v3)) {
+																					if (is_array($v3)) {
+																						foreach ($v3 as $k4 => $v4) {
+																							$output[$k4] = '----- '. $k4;
+																							if (isset($v4)) {
+																								if (is_array($v4)) {
+																									foreach ($v4 as $k5 => $v5) {
+																										$output[$k5] = '------ '. $k5;	
+																									}
+																								} else {
+																									$output[$v4] = '------ '. $v4;
+																								}
+																							}
+																						}
+																					} else {
+																						$output[$v3] = '----- '. $v3;
+																					}
+																				}
+																			}
+																		}
+																	} else {
+																		$output[$v2] = '---- '. $v2;
+																	}
+																}
+															}
+														}
+													} else {
+														$output[$v] = '--- '. $v;
+													}
+												}
+											}
+										}
+									} else {
+										$output[$val] = '-- '. $val;
+									}
+								}
+							}
+						}
+					} else {
+						$output[$value] = '- '. $value;
+					}
+				}
+			}
+		}
+		return $output;
+	}
+}

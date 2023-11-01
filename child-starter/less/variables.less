@@ -1,0 +1,193 @@
+/* Variables */
+// Colors 
+// Blue
+@blue: #015cd5;
+@blue-rgb: rgb(1,92,213); 
+.blue {
+	color: @blue;
+	color: @blue-rgb;
+}
+.blue-bg {
+	background-color: @blue;
+	background-color: @blue-rgb;
+}
+// Dark Blue
+@dark-blue: #144460;
+@dark-blue-rgb: rgb(20,68,96); 
+.dark-blue {
+	color: @dark-blue;
+	color: @dark-blue-rgb;
+}
+.dark-blue-bg {
+	background-color: @dark-blue;
+	background-color: dark-@blue-rgb;
+}
+// Aqua
+@aqua: #13a98e; 
+@aqua-rgb: rgb(19,169,142); 
+.aqua {
+	color: @aqua;
+	color: @aqua-rgb;
+}
+.aqua-bg {
+	background-color: @aqua;
+	background-color: @aqua-rgb;
+}
+// Aqua Lite
+@aqua-lite: #91d6c4;
+@aqua-lite-rgb: rgb(145,214,196); 
+.aqua-lite {
+	color: @aqua-lite;
+	color: @aqua-lite-rgb;
+}
+.aqua-lite-bg {
+	background-color: @aqua-lite;
+	background-color: @aqua-lite-rgb;
+}
+// Purple
+@purple: #872683;
+@purple-rgb: rgb(135,38,131); 
+.purple {
+	color: @purple;
+	color: @purple-rgb;
+}
+.purple-bg {
+	background-color: @purple;
+	background-color: @purple-rgb;
+}
+// Lite Grey
+@lite-grey: #afb2b9;
+@lite-grey-rgb: rgb(175,178,185);
+.lite-grey {
+	color: @lite-grey;
+	color: @lite-grey-rgb;
+}
+.lite-grey-bg {
+	background-color: @lite-grey;
+	background-color: @lite-grey-rgb;
+}
+// Medium Grey
+@medium-grey: #666;
+@medium-grey-rgb: rgb(102,102,102);
+.medium-grey {
+	color: @medium-grey;
+	color: @medium-grey-rgb;
+}
+.medium-grey-bg {
+	background-color: @medium-grey;
+	background-color: @medium-grey-rgb;
+}
+// Grey Green
+@grey-green: #363e3b;
+@grey-green-rgb: rgb(54,62,59);
+.grey-green {
+	color: @grey-green;
+	color: @grey-green-rgb;
+}
+.grey-green-bg {
+	background-color: @grey-green;
+	background-color: @grey-green-rgb;
+}
+// Basefont Color
+@baseGrey: #424242;
+@baseGrey-rgb: rgb(66,66,66);
+.baseGrey {
+	color: @baseGrey;
+	color: @baseGrey-rgb;
+}
+.normal,
+.regularfont {
+	font-style: normal;
+	font-weight: 300;
+}
+.basefont {
+	.regularfont;
+	//font-style: normal;
+	//font-weight: normal;
+	font-size: 22px;
+	font-size: 20px;
+	.baseGrey;
+	line-height: 1.35;
+	word-spacing: 0.1em;
+}
+.titlefont {
+	font-family: 'MyriadWebPro-Bold', Helvetica, Arial, Sans-Serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1em;
+	.blue;
+}
+.text-color-light {
+	.basefont;
+	.medium-grey;
+}
+// Animations 
+.animate-quick {
+	-webkit-transition: all 0.20s ease-in-out;
+	   -moz-transition: all 0.20s ease-in-out;
+		-ms-transition: all 0.20s ease-in-out;
+		 -o-transition: all 0.20s ease-in-out;
+			transition: all 0.20s ease-in-out;
+}
+.animate-medium {
+	-webkit-transition: all 0.50s ease-in-out;
+	   -moz-transition: all 0.50s ease-in-out;
+		-ms-transition: all 0.50s ease-in-out;
+		 -o-transition: all 0.50s ease-in-out;
+			transition: all 0.50s ease-in-out;
+}
+.animate-gradual {
+	-webkit-transition: all 0.77s ease-in-out;
+	   -moz-transition: all 0.77s ease-in-out;
+	    -ms-transition: all 0.77s ease-in-out;
+	     -o-transition: all 0.77s ease-in-out;
+	        transition: all 0.77s ease-in-out;
+}
+.animate-slow {
+	-webkit-transition: all 1s ease-in-out;
+	   -moz-transition: all 1s ease-in-out;
+	    -ms-transition: all 1s ease-in-out;
+	     -o-transition: all 1s ease-in-out;
+	        transition: all 1s ease-in-out;
+}
+.animate-remove {
+	-webkit-transition: none;
+	   -moz-transition: none;
+		-ms-transition: none;
+		 -o-transition: none;
+			transition: none;
+}
+/* --------- Responsive ---------- */
+/*  
+xxxxs: 0-319px,
+xxxs: 320px-479px
+xxs: 480px-567px,
+xs: 568px-666px,
+sm: 667px-767px,
+md: 768px-991px,
+lg: 992px-1199px,
+xl: 1200px-1439px,
+xxl: 1440px-1599px,
+xxxl: 1600px-1899px,
+xxxxl: 1900px+
+*/ 
+@media (max-width: 1899px) { //xxl: 1600px-1899px
+}
+@media (max-width: 1599px) { //xxl: 1440px-1599px
+}
+@media (max-width: 1439px) { //xl: 1200px-1439px
+}
+@media (max-width: 1199px) { //lg: 992px-1199px
+}
+@media (max-width: 991px) { //md: 768px-991px
+}
+@media (max-width: 767px) { //sm: 667px-767px
+}
+@media (max-width: 666px) { //xs: 568px-666px
+}
+@media (max-width: 567px) { //xxs: 480px-567px
+}
+@media (max-width: 479px) { //xxxs: 320px-479px,
+}
+@media (max-width: 319px) { //xxxxs: 0-319px,
+}

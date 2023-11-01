@@ -1,0 +1,7 @@
+/* Slidenav 4.0.0-alpha.5 ( https://github.com/tightcode/slidenav ) */
+@media (min-width: 768px) {
+  .dropdown>div {
+    position: absolute;
+    clip: rect(0.5rem, 9999px, 9999px, -9999px);
+  }
+}
