@@ -1038,7 +1038,6 @@ function enableTabbedAccessibleMenu($) {
 		//console.log('$link: '. $link);
 		
 		if ($link.parent('li').hasClass('scroll-link')) {
-			//console.log('scroll-link');
 			if (isAnchorOnPage($link) === true) {
 				//console.log('anchor on page');
 				scrollToAnchor($link,50,1000);
@@ -1272,6 +1271,7 @@ function enableTopLevelMenuLinks($) {
 	$('.hoverable .navbar-nav > .menu-item a').on('click', function(e) {
 		e.preventDefault();
 		if (!$(this).parent('li').hasClass('scroll-link')) {
+			console.log('CLICK!');
 			var $link, $linkTarget
 			if (!$(this).hasClass('dropdown-toggle')) {	
 				$link = $(this);
@@ -1445,10 +1445,10 @@ function detectScrollDirection($, scrollDirection) {
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
 		if (scroll > position) {
-			console.log('scrollDown');
+			//console.log('scrollDown');
 			scrollDirection = 'scrollDown';
 		} else {
-			console.log('scrollUp');
+			//console.log('scrollUp');
 			scrollDirection = 'scrollUp';
 		}
 		position = scroll;
