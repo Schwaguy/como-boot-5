@@ -68,6 +68,11 @@ function como_boot_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
+			'name'      => 'Monster INsights',
+			'slug'      => 'google-analytics-for-wordpress',
+			'required'  => false,
+		),
+		/*array(
 			'name'               => 'Google Analytics Premium', // The plugin name.
 			'slug'               => 'google-analytics-premium', // The plugin slug (typically the folder name).
 			'source'             => get_template_directory() . '/plugins/google-analytics-premium.zip', // The plugin source.
@@ -77,7 +82,7 @@ function como_boot_register_required_plugins() {
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-		),
+		),*/
 		array(
 			'name'      => 'Obfuscate Email',
 			'slug'      => 'obfuscate-email',
@@ -145,6 +150,11 @@ function como_boot_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
+			'name'      => 'Updraft PLus',
+			'slug'      => 'updraftplus',
+			'required'  => false,
+		),
+		/*array(
 			'name'               => 'Updraft Plus Premium', // The plugin name.
 			'slug'               => 'updraftplus', // The plugin slug (typically the folder name).
 			'source'             => get_template_directory() . '/plugins/updraftplus.zip', // The plugin source.
@@ -154,7 +164,7 @@ function como_boot_register_required_plugins() {
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-		),
+		),*/
 		array(
 			'name'      => 'User Login History',
 			'slug'      => 'user-login-history',

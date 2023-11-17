@@ -27,7 +27,6 @@
 <file name="sidebar.php" server="illomoc.com/essa/" local="132691258711656460" remote="132661869000000000" Dst="2" />
 <file name="single.php" server="illomoc.com/essa/" local="132691258711886507" remote="132661869000000000" Dst="2" />
 <file name="style.combined.min.css" server="illomoc.com/essa/" local="132691258712636678" remote="132661869000000000" Dst="2" />
-<file name="style.css" server="illomoc.com/essa/" local="132691258712736706" remote="132661869000000000" Dst="2" />
 <file name="page-sectional-narrow-sidebar.php" server="illomoc.com/essa2021/" local="132702519645424505" remote="132702519600000000" Dst="2" />
 <file name="page-sectional-narrow.php" server="illomoc.com/essa2021/" local="132702519293801629" remote="132702519000000000" Dst="2" />
 <file name="404.php" server="illomoc.com/essa2021/" local="132702519858990006" remote="132691192200000000" Dst="2" />
@@ -54,7 +53,6 @@
 <file name="sidebar.php" server="illomoc.com/essa2021/" local="132702522980612982" remote="132691192200000000" Dst="2" />
 <file name="sectional-pages.php" server="illomoc.com/essa2021/" local="132702522980632986" remote="132691192200000000" Dst="2" />
 <file name="single.php" server="illomoc.com/essa2021/" local="132702522980692997" remote="132691192200000000" Dst="2" />
-<file name="style.css" server="illomoc.com/essa2021/" local="132707487964463679" remote="132707487600000000" Dst="2" />
 <file name="style.combined.min.css" server="illomoc.com/essa2021/" local="132702522981663223" remote="132691192200000000" Dst="2" />
 <file name="404.php" server="c73358.sgvps.net/essapharma.com/public_html/" local="133234727873892731" remote="133204590000000000" Dst="2" />
 <file name="archive.php" server="c73358.sgvps.net/essapharma.com/public_html/" local="133234727874232800" remote="133204590000000000" Dst="2" />
@@ -83,7 +81,6 @@
 <file name="sectional-pages.php" server="c73358.sgvps.net/essapharma.com/public_html/" local="133234728041270794" remote="133204590000000000" Dst="2" />
 <file name="sidebar.php" server="c73358.sgvps.net/essapharma.com/public_html/" local="133234728041630870" remote="133204590000000000" Dst="2" />
 <file name="single.php" server="c73358.sgvps.net/essapharma.com/public_html/" local="133234728042251013" remote="133204590000000000" Dst="2" />
-<file name="style.css" server="c73358.sgvps.net/essapharma.com/public_html/" local="133234728044601556" remote="133204590000000000" Dst="2" />
 <file name="style.combined.min.css" server="c73358.sgvps.net/essapharma.com/public_html/" local="133234728043651336" remote="133204590000000000" Dst="2" />
 <file name="woocommerce.php" server="c73358.sgvps.net/essapharma.com/public_html/" local="133234728044291494" remote="133204590000000000" Dst="2" />
 <file name="404.php" server="soltrtwebdev.com/essa/" local="133227563652028177" remote="133235497200000000" Dst="2" />
@@ -114,7 +111,6 @@
 <file name="sidebar.php" server="soltrtwebdev.com/essa/" local="133227563678634173" remote="133235502600000000" Dst="2" />
 <file name="single.php" server="soltrtwebdev.com/essa/" local="133227563678694185" remote="133235502600000000" Dst="2" />
 <file name="style.combined.min.css" server="soltrtwebdev.com/essa/" local="133227563678904227" remote="133235502600000000" Dst="2" />
-<file name="style.css" server="soltrtwebdev.com/essa/" local="133239058214883314" remote="133239060000000000" Dst="2" />
 <file name="woocommerce.php" server="soltrtwebdev.com/essa/" local="133227563699752407" remote="133235502600000000" Dst="2" />
 <file name="404.php" server="vps70258.inmotionhosting.com/public_html/soleburystrat/" local="133245836820000000" remote="133359745090000000" Dst="2" />
 <file name="archive.php" server="vps70258.inmotionhosting.com/public_html/soleburystrat/" local="133245836820000000" remote="133359745090000000" Dst="2" />
@@ -144,7 +140,6 @@
 <file name="sidebar.php" server="vps70258.inmotionhosting.com/public_html/soleburystrat/" local="133245837430000000" remote="133359750400000000" Dst="2" />
 <file name="single.php" server="vps70258.inmotionhosting.com/public_html/soleburystrat/" local="133245837430000000" remote="133359750400000000" Dst="2" />
 <file name="style.combined.min.css" server="vps70258.inmotionhosting.com/public_html/soleburystrat/" local="133245837430000000" remote="133359750400000000" Dst="2" />
-<file name="style.css" server="vps70258.inmotionhosting.com/public_html/soleburystrat/" local="133245837430000000" remote="133359750400000000" Dst="2" />
 <file name="woocommerce.php" server="vps70258.inmotionhosting.com/public_html/soleburystrat/" local="133245837480000000" remote="133359750420000000" Dst="2" />
 <file name="functions.php" server="vps70258.inmotionhosting.com/soleburystrat.com/" local="133368407135067253" remote="133368407180000000" Dst="2" />
 <file name="404.php" server="vps70258.inmotionhosting.com/soleburystrat.com/" local="133359819210000000" remote="133359819210000000" Dst="2" />
@@ -174,7 +169,9 @@
 <file name="sidebar.php" server="vps70258.inmotionhosting.com/soleburystrat.com/" local="133359819230000000" remote="133359819230000000" Dst="2" />
 <file name="single.php" server="vps70258.inmotionhosting.com/soleburystrat.com/" local="133359819230000000" remote="133359819230000000" Dst="2" />
 <file name="style.combined.min.css" server="vps70258.inmotionhosting.com/soleburystrat.com/" local="133359819230000000" remote="133359819230000000" Dst="2" />
-<file name="style.css" server="vps70258.inmotionhosting.com/soleburystrat.com/" local="133359863742736752" remote="133359865310000000" Dst="2" />
 <file name="woocommerce.php" server="vps70258.inmotionhosting.com/soleburystrat.com/" local="133359819230000000" remote="133359819230000000" Dst="2" />
 <file name="functions.php" server="illomoc.com/viridian/" local="133410831123719129" remote="133410831000000000" Dst="2" />
+<file name="style.combined.min.css" server="illomoc.com" local="133446454242550295" remote="133446454200000000" Dst="1" />
+<file name="style.css" server="illomoc.com" local="133446453757215631" remote="133446454200000000" Dst="1" />
+<file name="style.less" server="illomoc.com" local="133446453756295605" remote="133446454200000000" Dst="1" />
 </dwsync>

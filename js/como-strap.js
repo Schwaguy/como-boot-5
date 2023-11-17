@@ -1635,38 +1635,50 @@ jQuery.noConflict();
 		$.each($animation_elements, function() {
 			var $element = $(this);
 			if (isInView($element)) { 	
-				if ($element.hasClass('bounceIn-on-scroll')) { $element.addClass('animated bounceIn'); }
-				else if ($element.hasClass('fadeInUp-on-scroll')) { $element.addClass('animated fadeInUp'); }
-				else if ($element.hasClass('fadeInDown-on-scroll')) { $element.addClass('animated fadeInDown'); }
-				else if ($element.hasClass('fadeInLeft-on-scroll')) { $element.addClass('animated fadeInLeft'); }
-				else if ($element.hasClass('fadeInRight-on-scroll')) { $element.addClass('animated fadeInRight'); }
-				else if ($element.hasClass('fadeInTopLeft-on-scroll')) { $element.addClass('animated fadeInTopLeft'); }
-				else if ($element.hasClass('fadeInTopRight-on-scroll')) { $element.addClass('animated fadeInTopRight'); }
-				else if ($element.hasClass('fadeInBottomLeft-on-scroll')) { $element.addClass('animated fadeInBottomLeft'); }
-				else if ($element.hasClass('fadeInBottomRight-on-scroll')) { $element.addClass('animated fadeInBottomRight'); }
-				else if ($element.hasClass('rotateIn-on-scroll')) { $element.addClass('animated rotateIn'); }
-				else if ($element.hasClass('rotateInDownLeft-on-scroll')) { $element.addClass('animated rotateInDownLeft'); }
-				else if ($element.hasClass('rotateInDownRight-on-scroll')) { $element.addClass('animated rotateInDownRight'); }
-				else if ($element.hasClass('rotateInUpLeft-on-scroll')) { $element.addClass('animated rotateInUpLeft'); }
-				else if ($element.hasClass('rotateInUpRight-on-scroll')) { $element.addClass('animated rotateInUpRight'); }
-				else if ($element.hasClass('zoomIn-on-scroll')) { $element.addClass('animated zoomIn'); }
-				else if ($element.hasClass('bounce-on-scroll')) { $element.addClass('animated bounce'); }
-				else if ($element.hasClass('shake-on-scroll')) { $element.addClass('animated shake'); }
-				else if ($element.hasClass('pulse-on-scroll')) { $element.addClass('animated pulse'); }
-				else if ($element.hasClass('flash-on-scroll')) { $element.addClass('animated flash'); }
-				else if ($element.hasClass('slideInDown-on-scroll')) { $element.addClass('animated slideInDown'); }
-				else if ($element.hasClass('slideInLeft-on-scroll')) { $element.addClass('animated slideInLeft'); }
-				else if ($element.hasClass('slideInRight-on-scroll')) { $element.addClass('animated slideInRight'); }
-				else if ($element.hasClass('slideInUp-on-scroll')) { $element.addClass('animated slideInUp'); }
-				else if ($element.hasClass('bounceIn-on-scroll')) { $element.addClass('animated bounceIn'); }
-				else if ($element.hasClass('bounceInDown-on-scroll')) { $element.addClass('animated bounceInDown'); }
-				else if ($element.hasClass('bounceInDown-on-scroll')) { $element.addClass('animated bounceInDown'); }
-				else if ($element.hasClass('bounceInLeft-on-scroll')) { $element.addClass('animated bounceInLeft'); }
-				else if ($element.hasClass('bounceInRight-on-scroll')) { $element.addClass('animated bounceInRight'); }
-				else if ($element.hasClass('bounceInUp-on-scroll')) { $element.addClass('animated bounceInUp'); }
-				else if ($element.hasClass('rollIn-on-scroll')) { $element.addClass('animated rollIn'); }
+				if ($element.hasClass('bounceIn-on-scroll')) { $element.addClass('animated bounceIn animate__bounceIn'); }
+				else if ($element.hasClass('fadeInUp-on-scroll')) { $element.addClass('animated fadeInUp animate__fadeInUp'); }
+				else if ($element.hasClass('fadeInUpBig-on-scroll')) { $element.addClass('animated fadeInUpBig animate__fadeInUpBig'); }
+				else if ($element.hasClass('fadeInDown-on-scroll')) { $element.addClass('animated fadeInDown animate__fadeInDown'); }
+				else if ($element.hasClass('fadeInDownBig-on-scroll')) { $element.addClass('animated fadeInDownBig animate__fadeInDownBig'); }
+				else if ($element.hasClass('fadeInLeft-on-scroll')) { $element.addClass('animated fadeInLeft animate__fadeInLeft'); }
+				else if ($element.hasClass('fadeInLeftBig-on-scroll')) { $element.addClass('animated fadeInLeftBig animate__fadeInLeftBig'); }
+				else if ($element.hasClass('fadeInRight-on-scroll')) { $element.addClass('animated fadeInRight animate__fadeInRight'); }
+				else if ($element.hasClass('fadeInRightBig-on-scroll')) { $element.addClass('animated fadeInRightBig animate__fadeInRightBig'); }
+				else if ($element.hasClass('fadeInTopLeft-on-scroll')) { $element.addClass('animated fadeInTopLeft animate__fadeInTopLeft'); }
+				else if ($element.hasClass('fadeInTopRight-on-scroll')) { $element.addClass('animated fadeInTopRight animate__fadeInTopRight'); }
+				else if ($element.hasClass('fadeInBottomLeft-on-scroll')) { $element.addClass('animated fadeInBottomLeft animate__fadeInBottomLeft'); }
+				else if ($element.hasClass('fadeInBottomRight-on-scroll')) { $element.addClass('animated fadeInBottomRight animate__fadeInBottomRight'); }
+				else if ($element.hasClass('rotateIn-on-scroll')) { $element.addClass('animated rotateIn animate__rotateIn'); }
+				else if ($element.hasClass('rotateInDownLeft-on-scroll')) { $element.addClass('animated rotateInDownLeft animate__rotateInDownLeft'); }
+				else if ($element.hasClass('rotateInDownRight-on-scroll')) { $element.addClass('animated rotateInDownRight animate__rotateInDownRight'); }
+				else if ($element.hasClass('rotateInUpLeft-on-scroll')) { $element.addClass('animated rotateInUpLeft animate__rotateInUpLeft'); }
+				else if ($element.hasClass('rotateInUpRight-on-scroll')) { $element.addClass('animated rotateInUpRight animate__rotateInUpRight'); }
+				else if ($element.hasClass('zoomIn-on-scroll')) { $element.addClass('animated zoomIn animate__zoomIn'); }
+				else if ($element.hasClass('bounce-on-scroll')) { $element.addClass('animated bounce animate__bounce'); }
+				else if ($element.hasClass('shake-on-scroll')) { $element.addClass('animated shake animate__shake'); }
+				else if ($element.hasClass('pulse-on-scroll')) { $element.addClass('animated pulse animate__pulse'); }
+				else if ($element.hasClass('flash-on-scroll')) { $element.addClass('animated flash animate__flash'); }
+				else if ($element.hasClass('tada-on-scroll')) { $element.addClass('animated tada animate__tada'); }
+				else if ($element.hasClass('slideInDown-on-scroll')) { $element.addClass('animated slideInDown animate__slideInDown'); }
+				else if ($element.hasClass('slideInLeft-on-scroll')) { $element.addClass('animated slideInLeft animate__slideInLeft'); }
+				else if ($element.hasClass('slideInRight-on-scroll')) { $element.addClass('animated slideInRight animate__slideInRight'); }
+				else if ($element.hasClass('slideInUp-on-scroll')) { $element.addClass('animated slideInUp animate__slideInUp'); }
+				else if ($element.hasClass('backInDown-on-scroll')) { $element.addClass('animated backInDown animate__backInDown'); }
+				else if ($element.hasClass('backInLeft-on-scroll')) { $element.addClass('animated backInLeft animate__backInLeft'); }
+				else if ($element.hasClass('backInRight-on-scroll')) { $element.addClass('animated backInRight animate__backInRight'); }
+				else if ($element.hasClass('backInUp-on-scroll')) { $element.addClass('animated backInUp animate__backInUp'); }
+				else if ($element.hasClass('flipInX-on-scroll')) { $element.addClass('animated flipInX animate__flipInX'); }
+				else if ($element.hasClass('flipInY-on-scroll')) { $element.addClass('animated flipInY animate__flipInY'); }
+				else if ($element.hasClass('lightSpeedInRight-on-scroll')) { $element.addClass('animated lightSpeedInRight animate__lightSpeedInRight'); }
+				else if ($element.hasClass('lightSpeedInLeft-on-scroll')) { $element.addClass('animated lightSpeedInLeft animate__lightSpeedInLeft'); }
+				else if ($element.hasClass('bounceIn-on-scroll')) { $element.addClass('animated bounceIn animate__bounceIn'); }
+				else if ($element.hasClass('bounceInDown-on-scroll')) { $element.addClass('animated bounceInDown animate__bounceInDown'); }
+				else if ($element.hasClass('bounceInLeft-on-scroll')) { $element.addClass('animated bounceInLeft animate__bounceInLeft'); }
+				else if ($element.hasClass('bounceInRight-on-scroll')) { $element.addClass('animated bounceInRight animate__bounceInRight'); }
+				else if ($element.hasClass('bounceInUp-on-scroll')) { $element.addClass('animated bounceInUp animate__bounceInUp'); }
+				else if ($element.hasClass('rollIn-on-scroll')) { $element.addClass('animated rollIn animate__rollIn'); }
 				else if ($element.hasClass('animateCustom-on-scroll')) { $element.addClass('animate-custom'); }
-				else { $element.addClass('animated fadeIn'); }
+				else { $element.addClass('animated fadeIn animate__fadeIn'); }
 				if ($element.hasClass('no-repeat')) { 
 					$element.removeClass('show-on-scroll');
 				}

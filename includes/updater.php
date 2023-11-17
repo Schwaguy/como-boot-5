@@ -1,20 +1,20 @@
 <?php
 /* Load Class. */
-$fxupdater_updater = new fxUpdater_Updater();
+$fxUpdater_ComoBoot5_Updater = new fxUpdater_ComoBoot5_Updater();
 /**
  * Updater Class
 **/
-class fxUpdater_Updater{
+class fxUpdater_ComoBoot5_Updater{
 	/**
 	 * Class Constructor
 	 */
 	public function __construct() {
 		/* Updater Config */
 		$this->config = array(
-			'server'  => 'https://wordpress.comocreative.com',
+			'server'  => 'https://comocreative.com',
 			'type'    => 'theme',
 			'id'      => 'como-boot-5',
-			'api'     => '2.3.3',
+			'api'     => '2.3.5',
 			'post'    => array(),
 		);
 		/* Admin Init */
