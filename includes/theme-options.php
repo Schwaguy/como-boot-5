@@ -987,7 +987,7 @@ function showSocial_shortcode($atts, $content="null"){
 		case 'instagram':
 			$url = ((!empty($socialOptions['instagram'])) ? $socialOptions['instagram'] : 'https://www.instagram.com/?url='. $image .'&media='. $current_url .'&description='. $title); 
 			$title = ((!empty($socialOptions['instagram'])) ? 'Visit us on Instagram' : 'Share on Instagram'); 
-			$socialLink = '<a href="'. $url .'" target="_blank" title="'. $title .'" aria-label="'. $title .'" class="instagram icon-link" role="button"><i class="'. (!empty($icon) ? $icon : '<i class="fab fa-brands fa-instagram"></i>') .'"></i><span class="sr-only">'. $title .'</span></a>';
+			$socialLink = '<a href="'. $url .'" target="_blank" title="'. $title .'" aria-label="'. $title .'" class="instagram icon-link" role="button"><i class="'. (!empty($icon) ? $icon : 'fab fa-brands fa-instagram') .'"></i><span class="sr-only">'. $title .'</span></a>';
 			break;
 		case 'pinterest':
 			$url = ((!empty($socialOptions['pinterest'])) ? $socialOptions['pinterest'] : 'https://pinterest.com/pin/create/button/?url='. $image .'&media='. $current_url .'&description='. $title); 
@@ -1035,15 +1035,15 @@ function showfax_shortcode($atts, $content="null"){
 // Show Email with Shortcode [showemail link=true/false content=text to override display]
 function showemail_shortcode($atts, $content="null"){
 	extract(shortcode_atts(array('link' => false), $atts));
-  	$output = showSiteEmail($atts['link'], $content);
+  	$output = showSiteEmail($atts['link'], $atts['class'], $content);
 	return $output;
 }
 add_shortcode('showemail', 'showemail_shortcode');
-function showSiteEmail($link=false, $content='') {
+function showSiteEmail($link=false, $class='', $content='') {
 	$optVar = checkContactOptions();
 	$contact = get_option($optVar);
 	$email = $contact['email'];
-	$output = (($link==true) ? getObfuscatedEmailLink($email, $params = array('content'=>$content))  : getObfuscatedEmailAddress($email));
+	$output = (($link==true) ? getObfuscatedEmailLink($email, $params = array('content'=>$content, 'class'=>$class))  : getObfuscatedEmailAddress($email));
 	return($output);
 }
 // Show Address with Shortcode [showaddress part='']

@@ -387,6 +387,7 @@ if (!function_exists('getObfuscatedEmailLink')) {
 		if (!isset($params['rel'])) {
 			$params['rel'] = 'nofollow';
 		}
+		$class = ((isset($params['class'])) ? $params['class'] : '');
 		//$display = ((!isset($params['display'])) ? $params['display'] : false);
 		$neverEncode = array('.', '@', '+'); // Don't encode those as not fully supported by IE & Chrome
 		$urlEncodedEmail = '';
@@ -409,7 +410,7 @@ if (!function_exists('getObfuscatedEmailLink')) {
 				$link .= ' ' . $param . '="' . htmlspecialchars($value). '"';
 			}
 		}
-		$link .= ' class="emailLink" aria-label="Send email" title="Send email">'. ((isset($params['content'])) ? ((!empty($params['content'])) ? $params['content'] : $obfuscatedEmail) : $obfuscatedEmail) .'</a>';
+		$link .= ' class="emailLink '. $class .'" aria-label="Send email" title="Send email">'. ((isset($params['content'])) ? ((!empty($params['content'])) ? $params['content'] : $obfuscatedEmail) : $obfuscatedEmail) .'</a>';
 		return $link;
 	}
 }

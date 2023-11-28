@@ -14,7 +14,7 @@ class fxUpdater_ComoBoot5_Updater{
 			'server'  => 'https://comocreative.com',
 			'type'    => 'theme',
 			'id'      => 'como-boot-5',
-			'api'     => '2.3.5',
+			'api'     => '2.3.7',
 			'post'    => array(),
 		);
 		/* Admin Init */
